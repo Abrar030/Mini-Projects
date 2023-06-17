@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.shopeon.com</title>
+</head>
+<style>
+    body {
+        /* background-color:black;   */
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        background-color: white;
+
+    }
+
+    .container {
+        display: flex;
+        position: sticky;
+        top: 0px;
+        justify-content: space-between;
+        /* border: 2px solid black; */
+        background-color:honeydew;
+        color: white;
+        font-family: cursive;
+        height: 57px;
+
+    }
+
+    .logo {
+
+        /* border:2px solid black; */
+        height: 57px;
+        width: 80px;
+        margin: 0px 25px;
+        background: url(./images/shopping_logo7.webp)no-repeat center center/cover;
+
+
+
+    }
+
+    .nav {
+
+        /* border:2px solid black; */
+        padding: 15px 0px;
+
+
+    }
+
+    a {
+        padding: 0px 25px;
+        text-decoration: none;
+        font-size: 17px;
+        color: rgb(78, 78, 78);
+        font-weight: bold;
+    }
+
+    #home:hover {
+        color: yellowgreen;
+
+
+    }
+
+    #menu:hover {
+
+        color: yellowgreen;
+
+    }
+
+    #aus:hover {
+
+        color: yellowgreen;
+
+    }
+
+    #cus:hover {
+
+        color: yellowgreen;
+
+    }
+
+    .search {
+
+        /* border:2px solid black; */
+        padding: 10px 10px;
+        background-color: honeydew;
+        
+
+    }
+
+    input {
+        padding: 5px 45px;
+        font-size: 15px;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 25px;
+        font-family: cursive;
+        background-color: transparent;
+        color: black;
+        border:2px solid yellowgreen;
+
+        
+
+    }
+
+    .back {
+        /* border: 2px solid black; */
+        display: flex;
+        height: 570px;
+        width: 100%;
+        background: url(./images/shopping_bg.jpg)no-repeat center center/cover;
+        /* background: url('https://source.unsplash.com/1600x900/?Digital-shopping')no-repeat center center/cover; */
+        z-index: -1;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        opacity: 1;
+        top: 0px;
+        left: 0px;  
+        /* 'https://source.unsplash.com/1600x900/?shopping' */
+
+    }
+
+    .back h2 {
+        border: 2px solid gainsboro;
+        color: black;
+
+        height: 170px;
+        width: 800px;
+        /* margin: 285px 459px; */
+        font-size: 4rem;
+        border-radius: 8px;
+        font-family: cursive;
+        text-align: center;
+
+    }
+
+    .s1 {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 2px solid black; */
+        height: 210px;
+    }
+
+    .amz {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+        background: url(./images/amzon_2.jpg)no-repeat center center/cover;
+
+    }
+
+    .myn {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+
+        background: url(./images/myntra-logo.png)no-repeat center center/cover;
+    }
+
+    .flip {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+        background: url(./images/flipkart.png)no-repeat center center/cover;
+    }
+
+    .pla {
+        display: flex;
+        justify-content: center;
+        font-size: 4rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        height: 190px;
+        color: yellowgreen;
+        /* font-weight: bold; */
+    }
+
+    .btn {
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .btn a {
+        padding: 4px 40px;
+        background-color: yellowgreen;
+        border-radius: 25px;
+        color: linen;
+    }
+
+    .s2 {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 2px solid black; */
+        height: 210px;
+    }
+
+    .s3 {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 2px solid black; */
+        height: 210px;
+    }
+
+    .s4 {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 2px solid black; */
+        height: 210px;
+    }
+
+    .s5 {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 2px solid black; */
+        height: 210px;
+    }
+
+    .nike {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+
+        background: url(./images/nike_logo4.jpg)no-repeat center center/cover;
+    }
+
+    .max {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+
+        background: url(./images/max_logo.png)no-repeat center center/cover;
+    }
+
+    .peter {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+        background: url(./images/peter_england_logo.png)no-repeat center center/cover;
+    }
+
+    .swiggy {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+
+        background: url(./images/swiggy_logo2.png)no-repeat center center/cover;
+    }
+
+    .domi {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+
+        background: url(./images/dominos_logo.jpg)no-repeat center center/cover;
+    }
+
+    .zoma {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+        background: url(./images/zomato_logo4.jpg)no-repeat center center/cover;
+    }
+
+    .kfc {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+
+        background: url(./images/kfc_logo.png)no-repeat center center/cover;
+    }
+
+    .bgk {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+
+        background: url(./images/burger_king_logo.webp)no-repeat center center/cover;
+    }
+
+    .mcd {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+        background: url(./images/mcdonalds-famous-logo.jpg)no-repeat center center/cover;
+    }
+
+    .thk {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+
+        background: url(./images/thick_shake_logo.png)no-repeat center center/cover;
+    }
+
+    .str {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+
+        background: url(./images/starbucks-logo.webp)no-repeat center center/cover;
+    }
+
+    .crm {
+        /* border: 2px solid black; */
+        height: 200px;
+        width: 200px;
+        background: url(./images/creamstone-logo.png)no-repeat center center/cover;
+    }
+
+    .txt {
+        text-align: center;
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+        height: 20px;
+    }
+
+
+    @media only screen and (min-width:0px) and (max-width:926px) {
+        body {
+            display: block;
+        }
+
+        a {
+            padding: 0px 25px;
+            text-decoration: none;
+            font-size: 17px;
+            color: rgb(78, 78, 78);
+            font-weight: bold;
+
+        }
+
+        input {
+            padding: 5px 45px;
+            font-size: 15px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 25px;
+            font-family: cursive;
+            background-color: transparent;
+            color: black;
+            border: 2px solid black;
+
+        }
+
+        .search {
+
+            /* border:2px solid black; */
+            padding: 5px 5px;
+            /* background-color: transparent; */
+        }
+
+    }
+
+    @media only screen and (min-width:890px) and (max-width:1180px) {
+        body {
+            display: block;
+        }
+
+    }
+
+    @media only screen and (min-width:1180px) {
+        body {
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="logo">
+
+        </div>
+        <div class="nav">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="menu">Menu</a>
+            <a href="#" id="aus">About us</a>
+            <a href="#" id="cus">Contact us</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search Something">
+        </div>
+    </div>
+
+    <div class="back">
+        <!-- <h2>Welcome to Shopping Universe</h2> -->
+    </div>
+
+    <div class="pla">
+        <h2>P l a t f o r m s</h2>
+    </div>
+    <div class="s1">
+
+        <div class="amz"></div>
+        <div class="myn"></div>
+        <div class="flip"></div>
+    </div>
+    <div class="btn">
+        <a href="https://www.amazon.com" class="btn" target="_blank">Click</a>
+        <a href="https://www.myntra.com" class="btn" target="_blank">Click</a>
+        <a href="https://www.flipkart.com" class="btn" target="_blank">Click</a>
+    </div>
+    </div>
+    <div class="s2">
+
+        <div class="nike"></div>
+        <div class="max"></div>
+        <div class="peter"></div>
+    </div>
+    <div class="btn">
+        <a href="https://www.nike.com" class="btn" target="_blank">Click</a>
+        <a href="https://www.maxfashion.com" class="btn" target="_blank">Click</a>
+        <a href="https://www.peterengland.com" class="btn" target="_blank">Click</a>
+    </div>
+    <div class="s3">
+        <div class="swiggy"></div>
+        <div class="domi"></div>
+        <div class="zoma"></div>
+    </div>
+    <div class="btn">
+        <a href="https://www.swiggy.com" class="btn" target="_blank">Click</a>
+        <a href="https://www.dominos.com" class="btn" target="_blank">Click</a>
+        <a href="https://www.zomato.com" class="btn" target="_blank">Click</a>
+    </div>
+    <div class="s4">
+
+        <div class="kfc"></div>
+        <div class="bgk"></div>
+        <div class="mcd"></div>
+    </div>
+    <div class="btn">
+        <a href="https://online.kfc.co.in/" class="btn" target="_blank">Click</a>
+        <a href="https://www.burgerking.com" class="btn" target="_blank">Click</a>
+        <a href="https://www.mcdonalds.com" class="btn" target="_blank">Click</a>
+    </div>
+    <div class="s5">
+
+        <div class="thk"></div>
+        <div class="str"></div>
+        <div class="crm"></div>
+    </div>
+    <div class="btn">
+        <a href="https://www.thethickshakefactory.com/  " class="btn" target="_blank">Click</a>
+        <a href="https://www.starbucks.com" class="btn" target="_blank">Click</a>
+        <a href="http://www.creamstoneconcepts.com/" class="btn" target="_blank">Click</a>
+    </div>
+
+    <div class="txt">
+        Copyright &copy; www.shopeon.com. All rights reserved!
+    </div>
+</body>
+
+</html>
